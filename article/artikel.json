@@ -1,0 +1,23 @@
+[
+    {
+        "judul":"Apa Itu Framework? Pengertian, Manfaat, & Jenisnya",
+        "img":"https://www.goldenfast.net/blog/wp-content/uploads/2021/07/Apa-Itu-Framework-Pengertian-Jenis-Fungsinya.jpg",
+        "description":"Secara singkat, framework adalah sebuah software yang menyediakan landasan dan kerangka dasar untuk mengembangkan berbagai macam aplikasi perangkat lunak.",
+        "writer":"Amera P. Safira",
+        "article":"artikel2.md"
+    },
+    {
+        "judul":"Pengertian HTML, Fungsi dan Cara Kerjanya",
+        "img":"https://niagaspace.sgp1.digitaloceanspaces.com/blog/wp-content/uploads/2021/05/17133817/Apa-itu-HTML.jpg",
+        "description":"Kepanjangan dari HTML adalah Hypertext Markup Language. Tak usah khawatir, walau terdengar teknis,",
+        "writer":"Putri Aprilia",
+        "article":"artikel1.md"
+    },
+    {
+        "judul":"Apa Itu Deep Web? Membahas Pengertian & Risikonya",
+        "img":"https://www.goldenfast.net/blog/wp-content/uploads/Apa-Itu-Deep-Web-Membahas-Pengertian-Risikonya.webp",
+        "description":"Bila digambarkan, dunia maya seperti gunung es, di mana puncak gunung es adalah surface web dan bagian di bawah laut adalah deep web.",
+        "writer":"Amera P. Safira",
+        "article":"artikel3.md"
+    }
+]
