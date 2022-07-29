@@ -1,0 +1,362 @@
+Users
+Menampilkan data user
+GET: /user
+
+response:
+[
+    {
+        "id": "",
+        "name": "",
+        "description": "",
+        "ig_url": "",
+        "gh_url": "",
+        "avatar_url": "",
+    },
+    ...
+]
+ 
+
+
+Menampilkan data user berdasarkan `id` tertentu
+GET: /user/[id]
+
+reponse:
+{
+        "id": "",
+        "name": "",
+        "description": "",
+        "ig_url": "",
+        "gh_url": "",
+        "avatar_url": "",
+}
+
+
+Menambahkan data pengguna
+POST: /user
+
+data:
+{
+        "id": "",
+        "name": "",
+        "description": "",
+        "ig_url": "",
+        "gh_url": "",
+        "avatar_url": "",
+}
+
+response:
+true    // if success
+false   // if failure
+
+
+Edit data pengguna
+PUT: /user
+
+data:
+{
+        "id": "",
+        "name": "",
+        "description": "",
+        "ig_url": "",
+        "gh_url": "",
+        "avatar_url": "",
+}
+
+response:
+true    // if success
+false   // if failure
+
+
+ Menghapus data user
+
+DELETE: /user/[id]
+
+response:
+true    // if success
+false   // if failure
+
+
+
+
+Portofolio
+
+Menampilkan data portofolio
+
+
+GET: /portofolio
+
+response:
+    {
+    "id": "",
+    "author_id": "",
+    "author_name": "",
+    "title": "",
+    "description": "",
+    "thumbnail_url":"",
+    "technologies":"",
+    "project_url":"",
+    "project_start":"",
+    "project_end":"",
+    },
+
+
+
+Menampilkan data user dengan `id` tertentu
+GET: /portofolio/[id]
+
+reponse:
+{
+    
+    "id": "",
+    "author_id": "",
+    "author_name": "",
+    "title": "",
+    "description": "",
+    "thumbnail_url":"",
+    "technologies":"",
+    "project_url":"",
+    "project_start":"",
+    "project_end":"",
+    
+}
+
+Menampilkan data user dengan `author_id` tertentu
+GET: /portofolio/[id]
+
+reponse:
+{
+    
+    "id": "",
+    "author_id": "",
+    "author_name": "",
+    "title": "",
+    "description": "",
+    "thumbnail_url":"",
+    "technologies":"",
+    "project_url":"",
+    "project_start":"",
+    "project_end":"",
+    
+}
+
+Menambahkan data portofolio
+POST: /portofolio
+
+data:
+{
+     
+    "id": "",
+    "author_id": "",
+    "author_name": "",
+    "title": "",
+    "description": "",
+    "thumbnail_url":"",
+    "technologies":"",
+    "project_url":"",
+    "project_start":"",
+    "project_end":"",
+    
+}
+
+response:
+true    // if success
+false   // if failure
+
+
+Edit data portofolio
+
+
+PUT: /portofolio
+
+data:
+{
+    "id": "",
+    "author_id": "",
+    "author_name": "",
+    "title": "",
+    "description": "",
+    "thumbnail_url":"",
+    "technologies":"",
+    "project_url":"",
+    "project_start":"",
+    "project_end":"",
+}
+
+response:
+true    // if success
+false   // if failure
+
+
+
+Menghapus data portofolio
+
+
+DELETE: /portofolio/[id]
+
+response:
+true    // if success
+false   // if failure
+
+
+
+
+
+
+Artikel
+
+Menampilkan data semua artikel
+GET: /artikel
+
+response:
+[
+    {
+        "id": "",
+        "author_id": "",
+        "author_name": "",
+        "title": "",
+        "content": "",
+        "thumbnail_url":"",
+        "created_date":"",
+  },
+]
+
+
+Menampilkan data artikel dengan id  tertentu
+
+
+GET: /artikel/[id]
+
+response:
+{
+    "id": "",
+    "author_id": "",
+    "author_name": "",
+    "title": "",
+    "content": "",
+    "thumbnail_url":"",
+    "created_date":"",
+}
+
+
+Menampilkan data artikel dengan `author_id` tertentu
+
+
+GET: /artikel/[id]
+
+response:
+{
+    "id": "",
+    "author_id": "",
+    "author_name": "",
+    "title": "",
+    "content": "",
+    "thumbnail_url":"",
+    "created_date":"",
+}
+
+
+Menambahkan artikel
+POST: /artikel
+
+data:
+{       
+    "id": "",
+    "author_id": "",
+    "author_name": "",
+    "title": "",
+    "content": "",
+    "thumbnail_url":"",
+    "created_date":"",
+}
+
+response:
+true    // if success
+false   // if failure
+
+
+Mengupdate artikel
+PUT: /artikel
+
+data:
+{      
+    "id": "",
+    "author_id": "",
+    "author_name": "",
+    "title": "",
+    "content": "",
+    "thumbnail_url":"",
+    "created_date":"",
+}
+
+response:
+true    // if success
+false   // if failure
+
+
+Menghapus artikel
+
+
+DELETE: /artikel/[id]
+
+response:
+true    // if success
+false   // if failure
+
+
+
+
+
+## Desain Database
+
+
+
+mermaid
+classDiagram
+    class User{
+        # id: int
+        + name: string
+        + description: string
+        + ig_url: string
+        + gh_url: string
+        + avatar_url: string
+        + getAllUser()
+        + getUserById()
+        + updateUser()
+        + createUser()
+        + deleteUser()
+    },
+    
+    class Portofolio{
+        # id: int
+        + author_id: string
+        + author_name: string
+        + title: string
+        + description: string
+        + thumbnail_url: string
+        + technologies: string
+        + project_url: string
+        + project_start: string
+        + project_end: string
+        + getAllPortofolio()
+        + getPortofolioById()
+        + getPortofolioByAuthorId()
+        + updatePortofolio()
+        + createPortofolio()
+        + deletePortofolio()
+    },
+   
+    class Artikel{
+        # id: int,
+        + author_id: string
+        + author_name: string
+        + title: string
+        + content: string
+        + thumbnail_url: string
+        + created_date: date
+        + getAllArticle()
+        + getArticleById()
+        + getArticlesByAuthorId()
+        + updateArticle()
+        + createArticle()
+        + deleteArticle()
+    }
